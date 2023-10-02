@@ -1,16 +1,13 @@
-export const App = () => {
+import NoteForm from './NoteForm';
+import NoteFilter from './NoteFilter';
+import NoteList from './NoteList';
+
+export default function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <NoteForm />
+      <NoteFilter />
+      <NoteList />
     </div>
   );
-};
+}
